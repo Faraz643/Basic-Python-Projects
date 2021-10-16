@@ -1,0 +1,60 @@
+import time
+name = input(" ENTER YOUR FULL NAME: " )
+print(" WAIT, WE ARE FETCHING YOUR DATA ")
+time.sleep(1)
+print(" █▒▒▒▒▒▒▒▒▒ ")
+time.sleep(1)
+print(' ███▒▒▒▒▒▒▒')
+time.sleep(1)
+print(' █████▒▒▒▒▒')
+time.sleep(1)
+print(' ███████▒▒▒')
+time.sleep(1)
+print(' ██████████')
+
+
+time.sleep(2)
+pin1 = 12345
+balance = 10000
+
+
+while True:
+    pin = int(input(" PLEASE ENTER YOUR PIN: "))
+    if pin == pin1:
+         options = (int(input('''PLEASE CHOOSE YOUR SERVICE:
+                    => PRESS 1 TO KNOW YOUR CURRENT BALANCE:
+                     => PRESS 2 TO WITHDRAW AMOUNT
+                     => PRESS 3 TO DEPOSIT AMOUNT
+                    => PRESS 4 TO END THIS SESSION  ''')))
+         if options == 1:
+             print(f" YOUR CURRENT BALANCE IS: {balance}")
+         elif options == 2:
+             print("ENTER WITHDRAW AMOUNT: ")
+             withdraw = int(input())
+             balance = balance - withdraw
+             print(
+                 f" AMOUNT WITHDRAW PROCESS SUCCESSFULLY COMPLETED. YOUR CURRRENT BALANCE IS;{balance},KINDLY COUNT THE AMOUNT OF CASH AND DO NOT FORGET TO TAKE BALANCE RECEIPT")
+         if options == 3:
+             print(" ENTER AMOUNT YOU WANT TO DEPOSIT:  ")
+             deposit = int(input())
+             balance = amount = balance + deposit
+             print(f" AMOUNT DEPOSITING PROCESS SUCCESSFULLY COMPLETED. YOUR CURRRENT BALANCE IS;{balance}")
+         if options == 4:
+             print(" THANK YOU FOR USING OUR SERVICE")
+             break
+
+    elif pin != pin1:
+        print(" PIN DOES NOT MATCH WITH THE ASSOCIATED ACCOUNT")
+
+
+
+
+
+
+
+
+
+
+
+
+
