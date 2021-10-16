@@ -1,0 +1,33 @@
+
+
+#a = str(input(" ENTER WORD TO CHECK WHETHER IT IS A PALINDROME WORD OR NOT=> "))
+while True:
+    a = str(input(" ENTER WORD TO CHECK WHETHER IT IS A PALINDROME WORD OR NOT=> "))
+    if (a[:]) == (a[::-1]):
+        print(f"{a} IS A PALINDROME WORD ")
+    else:
+        print(f"{a} IS NOT A PALINDROME WORD")
+    print("--------------------------")
+    end = input(" DO YOU WANT TO CHECK AGAIN(enter yes/no): ")
+    print("--------------------------")
+    if end == 'yes':
+        pass
+    elif end == "no":
+        break
+        
+
+
+while True:
+    b = (input('ENTER THE NUMBER TO CHECK TO WHETHER IT IS A PALINDROME NUMBER OR NOT=> '))
+    if str(b[:]) == str(b[::-1]):
+        print(f"{b} IS A PALINDROME NUMBER ")
+    else:
+        print(f"{b} IS NOT A PALINDROME NUMBER")
+    end1= input( "DO YOU WANT TO CHECK AGAIN(enter yes/no): ")
+    if end1== "yes":
+        pass
+    elif end1== "no":
+        break
+print("=======================================================")
+print(" THANK YOU FOR USING OUR SERVICE :) ")
+print("=======================================================")
